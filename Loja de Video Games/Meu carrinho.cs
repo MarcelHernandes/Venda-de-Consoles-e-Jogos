@@ -20,6 +20,6 @@ namespace Loja_de_Video_Games
         private void Meu_carrinho_Load(object sender, EventArgs e)
         {
 
-        }
-    }
-}
+        }//Fim do carrinho
+    }//Fim da classe
+}//Fim do projeto 

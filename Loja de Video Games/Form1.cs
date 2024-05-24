@@ -39,22 +39,22 @@ namespace Loja_de_Video_Games
         private void Entrar_Click(object sender, EventArgs e)
         {
             log.ShowDialog();
-        }
+        }//Fim do login
         private void Carrinho_Click(object sender, EventArgs e)
         {
             car.ShowDialog();
-        }
+        }//Fim do carrinho
         private void PrecisandoDeAjuda_Click(object sender, EventArgs e)
         {
             assis.ShowDialog();
-        }
+        }//Fim da Assistência
         private void JogosAVenda_Click(object sender, EventArgs e)
         {
             games.ShowDialog();
-        }
+        }//Fim dos Jogos a venda
         private void ConsolesAVenda_Click(object sender, EventArgs e)
         {
             consoles.ShowDialog();
-        }
-    }
-}
+        }//Fim dos Consoles a venda
+    }//Fim da Classe
+}//Fim do projeto

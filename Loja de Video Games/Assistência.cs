@@ -20,6 +20,6 @@ namespace Loja_de_Video_Games
         private void Assistência_Load(object sender, EventArgs e)
         {
 
-        }
-    }
-}
+        }//Fim da Assistência
+    }//Fim da Classe
+}//Fim do Projeto 

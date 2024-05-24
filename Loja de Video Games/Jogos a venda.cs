@@ -20,6 +20,6 @@ namespace Loja_de_Video_Games
         private void Jogos_a_venda_Load(object sender, EventArgs e)
         {
 
-        }
-    }
-}
+        }//Fim do Jogos a venda
+    }//Fim da classe
+}//Fim do projeto

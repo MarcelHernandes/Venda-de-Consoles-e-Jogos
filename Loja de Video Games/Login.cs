@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Org.BouncyCastle.Crypto.Digests;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,6 @@ namespace Loja_de_Video_Games
         private void Login_Load(object sender, EventArgs e)
         {
 
-        }
-    }
-}
+        }//Fim do Login
+    }//Fim da classe
+}//Fim do projeto

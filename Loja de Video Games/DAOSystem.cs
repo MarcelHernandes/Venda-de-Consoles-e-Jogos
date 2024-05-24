@@ -76,5 +76,5 @@ namespace Loja_de_Video_Games
         {
             return contador;
         }//fim do quantidade de dados
-    }
-}
+    }//Fim da Classe
+}//Fim do Projeto

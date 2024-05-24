@@ -18,33 +18,28 @@ namespace Loja_de_Video_Games
         {
             InitializeComponent();
             bd = new DAOSystem();
-        }
+        }//Fim do Castro
 
         private void Cadastro_Load(object sender, EventArgs e)
         {
 
-        }
-
+        }//Fim do Cadastro Load
         private void ColocarNome_TextChanged(object sender, EventArgs e)
         {
 
-        }
-
+        }//Fim do Cadastro do nome
         private void ColocarSenha_TextChanged(object sender, EventArgs e)
         {
 
-        }
-
+        }//Fim do Cadastro de senha
         private void ConfirmarSenha_TextChanged(object sender, EventArgs e)
         {
 
-        }
-
+        }//Fim do Confirmar senha
         private void ColocarEmail_TextChanged(object sender, EventArgs e)
         {
 
-        }
-
+        }//Fim do cadastro de email
         private void ConcluirCadastro_Click(object sender, EventArgs e)
         {
             try
@@ -67,7 +62,5 @@ namespace Loja_de_Video_Games
                 MessageBox.Show("Algo deu errado!\n\n" + ex);
             }
         }//fim do botão cadastrar
-
-
-    }
-}
+    }//Fim da Classe
+}//Fim do Projeto
