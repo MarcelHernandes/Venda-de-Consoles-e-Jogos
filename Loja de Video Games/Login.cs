@@ -16,5 +16,10 @@ namespace Loja_de_Video_Games
         {
             InitializeComponent();
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -34,11 +34,11 @@
             System.Windows.Forms.Label label4;
             System.Windows.Forms.Label label5;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cadastro));
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ColocarNome = new System.Windows.Forms.TextBox();
+            this.ColocarSenha = new System.Windows.Forms.TextBox();
+            this.ConfirmarSenha = new System.Windows.Forms.TextBox();
+            this.ColocarEmail = new System.Windows.Forms.TextBox();
+            this.ConcluirCadastro = new System.Windows.Forms.Button();
             label1 = new System.Windows.Forms.Label();
             label2 = new System.Windows.Forms.Label();
             label3 = new System.Windows.Forms.Label();
@@ -79,30 +79,6 @@
             label3.TabIndex = 3;
             label3.Text = "Senha:";
             // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(279, 104);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(262, 26);
-            this.textBox1.TabIndex = 4;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(279, 163);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(262, 26);
-            this.textBox2.TabIndex = 5;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(279, 210);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(262, 26);
-            this.textBox3.TabIndex = 6;
-            // 
             // label4
             // 
             label4.AutoSize = true;
@@ -125,23 +101,52 @@
             label5.TabIndex = 8;
             label5.Text = "E-mail:";
             // 
-            // textBox4
+            // ColocarNome
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(279, 268);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(262, 26);
-            this.textBox4.TabIndex = 9;
+            this.ColocarNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ColocarNome.Location = new System.Drawing.Point(279, 104);
+            this.ColocarNome.Name = "ColocarNome";
+            this.ColocarNome.Size = new System.Drawing.Size(262, 26);
+            this.ColocarNome.TabIndex = 4;
+            this.ColocarNome.TextChanged += new System.EventHandler(this.ColocarNome_TextChanged);
             // 
-            // button1
+            // ColocarSenha
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(334, 329);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(158, 55);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Concluir";
-            this.button1.UseVisualStyleBackColor = true;
+            this.ColocarSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ColocarSenha.Location = new System.Drawing.Point(279, 163);
+            this.ColocarSenha.Name = "ColocarSenha";
+            this.ColocarSenha.Size = new System.Drawing.Size(262, 26);
+            this.ColocarSenha.TabIndex = 5;
+            this.ColocarSenha.TextChanged += new System.EventHandler(this.ColocarSenha_TextChanged);
+            // 
+            // ConfirmarSenha
+            // 
+            this.ConfirmarSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ConfirmarSenha.Location = new System.Drawing.Point(279, 210);
+            this.ConfirmarSenha.Name = "ConfirmarSenha";
+            this.ConfirmarSenha.Size = new System.Drawing.Size(262, 26);
+            this.ConfirmarSenha.TabIndex = 6;
+            this.ConfirmarSenha.TextChanged += new System.EventHandler(this.ConfirmarSenha_TextChanged);
+            // 
+            // ColocarEmail
+            // 
+            this.ColocarEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ColocarEmail.Location = new System.Drawing.Point(279, 268);
+            this.ColocarEmail.Name = "ColocarEmail";
+            this.ColocarEmail.Size = new System.Drawing.Size(262, 26);
+            this.ColocarEmail.TabIndex = 9;
+            this.ColocarEmail.TextChanged += new System.EventHandler(this.ColocarEmail_TextChanged);
+            // 
+            // ConcluirCadastro
+            // 
+            this.ConcluirCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ConcluirCadastro.Location = new System.Drawing.Point(334, 329);
+            this.ConcluirCadastro.Name = "ConcluirCadastro";
+            this.ConcluirCadastro.Size = new System.Drawing.Size(158, 55);
+            this.ConcluirCadastro.TabIndex = 10;
+            this.ConcluirCadastro.Text = "Concluir";
+            this.ConcluirCadastro.UseVisualStyleBackColor = true;
+            this.ConcluirCadastro.Click += new System.EventHandler(this.ConcluirCadastro_Click);
             // 
             // Cadastro
             // 
@@ -150,13 +155,13 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.ConcluirCadastro);
+            this.Controls.Add(this.ColocarEmail);
             this.Controls.Add(label5);
             this.Controls.Add(label4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.ConfirmarSenha);
+            this.Controls.Add(this.ColocarSenha);
+            this.Controls.Add(this.ColocarNome);
             this.Controls.Add(label3);
             this.Controls.Add(label2);
             this.Controls.Add(label1);
@@ -165,6 +170,7 @@
             this.MinimumSize = new System.Drawing.Size(816, 489);
             this.Name = "Cadastro";
             this.Text = "Cadastro";
+            this.Load += new System.EventHandler(this.Cadastro_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -172,10 +178,10 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox ColocarNome;
+        private System.Windows.Forms.TextBox ColocarSenha;
+        private System.Windows.Forms.TextBox ConfirmarSenha;
+        private System.Windows.Forms.TextBox ColocarEmail;
+        private System.Windows.Forms.Button ConcluirCadastro;
     }
 }

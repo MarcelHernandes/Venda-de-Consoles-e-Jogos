@@ -98,17 +98,36 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assistência.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assistência.Designer.cs">
+      <DependentUpon>Assistência.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cadastro.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Cadastro.Designer.cs">
       <DependentUpon>Cadastro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Consoles a venda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consoles a venda.Designer.cs">
+      <DependentUpon>Consoles a venda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAOSystem.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jogos a venda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jogos a venda.Designer.cs">
+      <DependentUpon>Jogos a venda.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -116,16 +135,34 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Meu carrinho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meu carrinho.Designer.cs">
+      <DependentUpon>Meu carrinho.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Assistência.resx">
+      <DependentUpon>Assistência.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cadastro.resx">
       <DependentUpon>Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consoles a venda.resx">
+      <DependentUpon>Consoles a venda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Jogos a venda.resx">
+      <DependentUpon>Jogos a venda.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meu carrinho.resx">
+      <DependentUpon>Meu carrinho.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

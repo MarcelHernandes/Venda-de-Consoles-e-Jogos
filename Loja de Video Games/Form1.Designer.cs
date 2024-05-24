@@ -32,12 +32,12 @@
             System.Windows.Forms.Label label2;
             System.Windows.Forms.Label label3;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.ConsolesAVenda = new System.Windows.Forms.Button();
+            this.JogosAVenda = new System.Windows.Forms.Button();
+            this.Cadastrar = new System.Windows.Forms.Button();
+            this.Carrinho = new System.Windows.Forms.Button();
+            this.PrecisandoDeAjuda = new System.Windows.Forms.Button();
+            this.Entrar = new System.Windows.Forms.Button();
             label1 = new System.Windows.Forms.Label();
             label2 = new System.Windows.Forms.Label();
             label3 = new System.Windows.Forms.Label();
@@ -53,53 +53,6 @@
             label1.Size = new System.Drawing.Size(454, 31);
             label1.TabIndex = 0;
             label1.Text = "Bem-Vindo a Loja de Jogos e Consoles";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(12, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(108, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Consoles a venda";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(139, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(99, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Jogos a venda";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(715, 12);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(73, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Cadastrar";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.Location = new System.Drawing.Point(571, 12);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(77, 23);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Carrinho";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.Location = new System.Drawing.Point(348, 12);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(111, 23);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Assistência Online";
-            this.button5.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -123,14 +76,67 @@
             label3.Text = "Compras podem ser feitas presencialmente ou virtualmente e entregaremos em sua ca" +
     "sa o seu console ou jogo que voce queira";
             // 
-            // button6
+            // ConsolesAVenda
             // 
-            this.button6.Location = new System.Drawing.Point(654, 12);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(55, 23);
-            this.button6.TabIndex = 8;
-            this.button6.Text = "Entrar";
-            this.button6.UseVisualStyleBackColor = true;
+            this.ConsolesAVenda.Location = new System.Drawing.Point(12, 12);
+            this.ConsolesAVenda.Name = "ConsolesAVenda";
+            this.ConsolesAVenda.Size = new System.Drawing.Size(108, 23);
+            this.ConsolesAVenda.TabIndex = 1;
+            this.ConsolesAVenda.Text = "Consoles a venda";
+            this.ConsolesAVenda.UseVisualStyleBackColor = true;
+            this.ConsolesAVenda.Click += new System.EventHandler(this.ConsolesAVenda_Click);
+            // 
+            // JogosAVenda
+            // 
+            this.JogosAVenda.Location = new System.Drawing.Point(139, 12);
+            this.JogosAVenda.Name = "JogosAVenda";
+            this.JogosAVenda.Size = new System.Drawing.Size(99, 23);
+            this.JogosAVenda.TabIndex = 2;
+            this.JogosAVenda.Text = "Jogos a venda";
+            this.JogosAVenda.UseVisualStyleBackColor = true;
+            this.JogosAVenda.Click += new System.EventHandler(this.JogosAVenda_Click);
+            // 
+            // Cadastrar
+            // 
+            this.Cadastrar.Location = new System.Drawing.Point(715, 12);
+            this.Cadastrar.Name = "Cadastrar";
+            this.Cadastrar.Size = new System.Drawing.Size(73, 23);
+            this.Cadastrar.TabIndex = 3;
+            this.Cadastrar.Text = "Cadastrar";
+            this.Cadastrar.UseVisualStyleBackColor = true;
+            this.Cadastrar.Click += new System.EventHandler(this.Cadastrar_Click);
+            // 
+            // Carrinho
+            // 
+            this.Carrinho.BackColor = System.Drawing.Color.Transparent;
+            this.Carrinho.Location = new System.Drawing.Point(571, 12);
+            this.Carrinho.Name = "Carrinho";
+            this.Carrinho.Size = new System.Drawing.Size(77, 23);
+            this.Carrinho.TabIndex = 4;
+            this.Carrinho.Text = "Carrinho";
+            this.Carrinho.UseVisualStyleBackColor = true;
+            this.Carrinho.Click += new System.EventHandler(this.Carrinho_Click);
+            // 
+            // PrecisandoDeAjuda
+            // 
+            this.PrecisandoDeAjuda.BackColor = System.Drawing.Color.Transparent;
+            this.PrecisandoDeAjuda.Location = new System.Drawing.Point(327, 12);
+            this.PrecisandoDeAjuda.Name = "PrecisandoDeAjuda";
+            this.PrecisandoDeAjuda.Size = new System.Drawing.Size(150, 23);
+            this.PrecisandoDeAjuda.TabIndex = 5;
+            this.PrecisandoDeAjuda.Text = "Precisando de ajuda ?";
+            this.PrecisandoDeAjuda.UseVisualStyleBackColor = true;
+            this.PrecisandoDeAjuda.Click += new System.EventHandler(this.PrecisandoDeAjuda_Click);
+            // 
+            // Entrar
+            // 
+            this.Entrar.Location = new System.Drawing.Point(654, 12);
+            this.Entrar.Name = "Entrar";
+            this.Entrar.Size = new System.Drawing.Size(55, 23);
+            this.Entrar.TabIndex = 8;
+            this.Entrar.Text = "Entrar";
+            this.Entrar.UseVisualStyleBackColor = true;
+            this.Entrar.Click += new System.EventHandler(this.Entrar_Click);
             // 
             // Form1
             // 
@@ -139,14 +145,14 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.Entrar);
             this.Controls.Add(label3);
             this.Controls.Add(label2);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.PrecisandoDeAjuda);
+            this.Controls.Add(this.Carrinho);
+            this.Controls.Add(this.Cadastrar);
+            this.Controls.Add(this.JogosAVenda);
+            this.Controls.Add(this.ConsolesAVenda);
             this.Controls.Add(label1);
             this.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -163,12 +169,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button ConsolesAVenda;
+        private System.Windows.Forms.Button JogosAVenda;
+        private System.Windows.Forms.Button Cadastrar;
+        private System.Windows.Forms.Button Carrinho;
+        private System.Windows.Forms.Button PrecisandoDeAjuda;
+        private System.Windows.Forms.Button Entrar;
     }
 }
 
